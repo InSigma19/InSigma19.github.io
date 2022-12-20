@@ -1,0 +1,185 @@
+body a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.conten {
+    width: calc(100%-180px);
+    height: 100%;
+    background: var(--body-color-);
+    margin-left: 90px;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    overflow: hidden;
+    color: var(--text-color);
+}
+
+.conten .gambar {
+    width: 100%;
+    display: flex;
+    margin: 10px;
+    margin-bottom: 40px;
+
+}
+
+.gambar img {
+    margin: auto;
+    width: 600px;
+    max-width: 100%;
+    object-fit: contain;
+    border-bottom: 2px solid #000dff;
+    border-top: 2px solid #000dff;
+}
+
+
+.ident {
+    margin: 5px;
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.ident .identitas {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.identitas img {
+    width: 5vh;
+    border-radius: 50%;
+    border: 1px solid grey;
+    object-fit: cover;
+    margin-right: 5px;
+}
+
+.identitas .header {
+    font-size: 1.6vh;
+    font-weight: 200;
+    background: #18191a;
+    padding: 1vh;
+    color: #fff;
+}
+
+.ident .tangga-post {
+    width: max-content;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 1.6vh;
+}
+
+.conten .text-conten {
+    margin: 10px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    font-size: 1em;
+    width: 100%;
+    max-width: 900px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text-conten p {
+    text-align: justify;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.text-conten .judul {
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.judul h2 {
+    font-weight: 900;
+}
+
+.footer {
+    width: 100%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    bottom: 25px;
+}
+
+.footer h4 {
+    font-size: 1.2em;
+    margin-left: 80px;
+}
+
+
+/* responsive */
+
+@media (max-width:820px) {
+    .conten {
+        margin-left: 64px;
+    }
+
+    .footer {
+        bottom: 15px;
+    }
+
+    .footer h4 {
+        font-size: 1em;
+        margin-left: 40px;
+    }
+
+    .text-conten h2 {
+        line-height: 35px;
+        letter-spacing: 1px;
+    }
+}
+
+@media (max-width:620px) {
+    .conten {
+        margin-left: 57px;
+    }
+
+    .footer {
+        bottom: 4px;
+    }
+
+    .footer h4 {
+        font-size: 11px;
+        margin-left: 30px;
+    }
+}
+
+@media (max-width:420px) {
+
+    .conten {
+        margin-left: 44px;
+    }
+
+    .identitas .header {
+        font-size: 1.3vh;
+        padding: .5vh;
+    }
+
+    .ident .tangga-post {
+        font-weight: 400;
+        font-size: 1.3vh;
+    }
+
+
+    .footer {
+        bottom: 0px;
+    }
+
+    .footer h4 {
+        font-size: 8px;
+        margin-left: 8px;
+        font-weight: 200;
+    }
+
+}

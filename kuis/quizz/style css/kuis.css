@@ -1,0 +1,246 @@
+*,
+*::before,
+*::after {
+
+    box-sizing: border-box;
+
+    font-family: Gotham Rounded;
+
+}
+
+
+
+:root {
+
+    --hue-neutral: 200;
+
+    --hue-wrong: 20;
+
+    --hue-correct: 300;
+
+}
+
+
+
+body {
+
+    --hue: var(--hue-neutral);
+
+    padding: 0;
+
+    margin: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100vw;
+
+    height: 100vh;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background-color: hsl(var(--hue), 90%, 40%);
+
+}
+
+.link {
+    margin: 20px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    border-radius: 20px;
+    background: #e0e0e0;
+    background: #e0e0e0;
+    box-shadow: 2px 2px 2px #928a8a,
+        -2px -2px 2px #fff;
+    box-sizing: border-box;
+}
+
+.link:hover {
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #a1a1a1,
+        inset -8px -8px 16px #fff;
+}
+
+.link:hover a {
+    font-size: 12px;
+}
+
+.link a {
+    text-decoration: none;
+    font-size: 13px;
+    color: #000;
+}
+
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: -200px;
+    margin-bottom: 20px;
+    width: 150px;
+    box-sizing: border-box;
+    padding: 15px;
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #a1a1a1,
+        inset -8px -8px 16px #fff;
+}
+
+.information .informasi {
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    background: #e0e0e0;
+    box-shadow: 2px 2px 2px #8f8f8f,
+        -2px -2px 2px #fff;
+}
+
+.informasi .kotak1 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+    background-color: rgb(251, 6, 255);
+
+}
+
+.informasi .kotak2 {
+    width: 50%;
+    height: 100%;
+    border: 1px solid;
+    background-color: #fb6d00;
+
+}
+
+body.correct {
+
+    --hue: var(--hue-correct);
+
+}
+
+
+
+body.wrong {
+
+    --hue: var(--hue-wrong);
+
+}
+
+
+
+.container {
+
+    width: 800px;
+
+    max-width: 80%;
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    padding: 10px;
+
+    background: #e0e0e0;
+    box-shadow: inset 8px 8px 16px #a1a1a1,
+        inset -8px -8px 16px #fff;
+
+}
+
+
+
+.btn-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, auto);
+
+    gap: 10px;
+
+    margin: 20px 0;
+
+}
+
+
+
+.btn {
+
+    --hue: var(--hue-neutral);
+
+    border: 1px solid hsl(var(--hue), 100%, 30%);
+    background: #e0e0e0;
+    box-shadow: 4px 4px 7px #8f8f8f,
+        -4px -4px 7px #fff;
+
+    border-radius: 5px;
+
+    padding: 5px 10px;
+
+    color: rgb(0, 0, 0);
+
+    outline: none;
+
+    transition: .5s;
+
+}
+
+
+
+.btn:hover {
+
+    box-shadow: none;
+
+}
+
+
+
+.btn.correct {
+
+    --hue: var(--hue-correct);
+
+    color: black;
+
+}
+
+
+
+.btn.wrong {
+
+    --hue: var(--hue-wrong);
+
+}
+
+
+
+.start-btn,
+.next-btn {
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+    padding: 10px 20px;
+
+}
+
+.controls {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+
+.hide {
+
+    display: none;
+
+}
