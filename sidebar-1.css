@@ -46,7 +46,7 @@
     border-right: 1px solid black;
     width: max-content;
     opacity: 0;
-    animation: type 2s 3.5s steps(14) forwards;
+    animation: types 2s 3.5s steps(18) forwards;
 }
 
 @keyframes type {
@@ -61,6 +61,23 @@
 
     100% {
         width: 14ch;
+        opacity: 1;
+        border-right: none;
+    }
+}
+
+@keyframes types {
+    0%{
+        width: 0ch;
+        opacity: 1;
+    }
+
+    99%{
+        border-right: 1px solid #000;
+    }
+
+    100%{
+        width: 18ch;
         opacity: 1;
         border-right: none;
     }
