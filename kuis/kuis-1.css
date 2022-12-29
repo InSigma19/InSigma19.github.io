@@ -124,17 +124,14 @@ body a {
 }
 
 .judul h3 {
-    padding: 5px;
+    padding: 5px 10px;
     font-weight: 300;
-    color: rgb(0, 0, 0);
-    background: linear-gradient(145deg, #f0f0f0, #cacaca);
-    box-shadow: 4px 4px 5px #8f8f8f,
-        -4px -4px 5px #fff;
+    color: #000;
     display: flex;
     width: max-content;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    font-family: monospace;
     white-space: nowrap;
     overflow: hidden;
     animation: type 4s steps(33) forwards;
@@ -283,9 +280,24 @@ body a {
 .card .info h3 {
     font-weight: 300;
     margin-bottom: 10px;
+    color: #000;
 }
 
-.card .info p {
+.card .paragraf {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.card .paragraf img {
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+}
+
+.card .paragraf p {
     font-weight: 400;
     color: #463aa0;
     font-size: 12px;

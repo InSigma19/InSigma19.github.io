@@ -18,7 +18,6 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
 </head>
 
 <div>
@@ -26,7 +25,7 @@
     <nav class="sidebar tutup">
         <header>
             <div class="img-text">
-                <span class="img">
+                <span class="img toggle">
                     <img src="../gambar/sig.jpg" alt="src">
                 </span>
 
@@ -38,7 +37,6 @@
                 </div>
             </div>
 
-            <i class="bx bx-chevron-right toggle"></i>
         </header>
 
         <div class="menu-bar">
@@ -54,7 +52,7 @@
                     <li class="nav-links">
                         <a href="../sidebar-1.html">
                             <i class="bx bx-home-smile bx-tada icon"></i>
-                            <span class="text nav-text">Home-Dashboard</span>
+                            <span class="text nav-text">Home-Page</span>
                         </a>
                     </li>
                     <li class="nav-links">
@@ -96,25 +94,25 @@
             <div class="img-slider">
                 <!-- slide card conten -->
                 <div class="slide active">
-                    <img src="../gambar/gambar-news/3.jpg" alt="">
+                    <img src="../news/news/gambar/images.jpeg-11.jpg" alt="">
                     <div class="info">
-                        <a href="">
-                            <h2>Slide 01</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.</p>
+                        <a href="news/news-1.html">
+                            <h2>Trio bintang mati</h2>
+                            <p>menunjukkan bagian penting dari teori gravitasi Einstein, Tarian orbit langit ternyata
+                                sesuai dengan ekspektasi fisikawan terhadap benda ultra
+                                padat</p>
                         </a>
 
                     </div>
                 </div>
                 <div class="slide">
-                    <img src="../gambar/gambar-news/4.jpg" alt="">
+                    <img src="../news/news/gambar/images.jpeg-11.jpg" alt="">
                     <div class="info">
-                        <a href="">
-                            <h2>Slide 01</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                incididunt ut
-                                labore et dolore magna aliqua.</p>
+                        <a href="news/news-1.html">
+                            <h2>Trio bintang mati</h2>
+                            <p>menunjukkan bagian penting dari teori gravitasi Einstein, Tarian orbit langit ternyata
+                                sesuai dengan ekspektasi fisikawan terhadap benda ultra
+                                padat</p>
                         </a>
 
                     </div>
@@ -123,9 +121,6 @@
                 <!-- btn -->
                 <div class="navigation">
                     <div class="btn active"></div>
-                </div>
-                
-                <div class="navigation">
                     <div class="btn"></div>
                 </div>
             </div>
@@ -140,7 +135,10 @@
                     <div class="info">
                         <a href="news/news-1.html">
                             <h2>hello world</h2>
-                            <p>Post on 17 january 2022</p>
+                            <header>
+                                <img src="../gambar/calendar.png" alt="">
+                                <p>Post on 17 january 2022</p>
+                            </header>
                         </a>
                     </div>
                     <div class="link">
@@ -150,6 +148,8 @@
             </div>
             <div class="conten2"></div>
         </div>
+
+        <!-- conten 2 -->
         <div class="conten2">
             <div class="atom">
                 <div class="center">
@@ -161,21 +161,27 @@
             <div class="conten-populer">
                 <h3>Matematika</h3>
                 <div class="card-populer">
-                    <img src="" alt="">
+                    <img src="../conten/conten/gambar/panel-matematika.jpg" alt="">
                     <div class="info-conten-populer">
                         <a href="../conten/conten/conten1.html">
                             <h4>Apa itu Matematika ?</h4>
-                            <p>post on 17 march 2022</p>
+                            <header>
+                                <img src="../gambar/calendar.png" alt="">
+                                <p>post on 17 march 2022</p>
+                            </header>
                         </a>
                     </div>
                 </div>
                 <h3>Fisika</h3>
                 <div class="card-populer">
-                    <img src="" alt="">
+                    <img src="../conten/conten/gambar/panel-fisika.jpg" alt="">
                     <div class="info-conten-populer">
                         <a href="../conten/conten/conten.html">
                             <h4>Apa itu Fisika ?</h4>
-                            <p>post on 17 march 2022</p>
+                            <header>
+                                <img src="../gambar/calendar.png" alt="">
+                                <p>post on 17 march 2022</p>
+                            </header>
                         </a>
                     </div>
                 </div>
@@ -200,6 +206,62 @@
     </svg>
     <!-- javasript link -->
     <script src="../style/sidebar-1.js"></script>
+    <!-- java slide -->
+    <script type="text/javascript">
+        var slides = document.querySelectorAll('.slide');
+        var btns = document.querySelectorAll('.btn');
+        let currentSlide = 1;
+
+        // Javascript for image slider manual navigation
+        var manualNav = function (manual) {
+            slides.forEach((slide) => {
+                slide.classList.remove('active');
+
+                btns.forEach((btn) => {
+                    btn.classList.remove('active');
+                });
+            });
+
+            slides[manual].classList.add('active');
+            btns[manual].classList.add('active');
+        }
+
+        btns.forEach((btn, i) => {
+            btn.addEventListener("click", () => {
+                manualNav(i);
+                currentSlide = i;
+            });
+        });
+
+        // Javascript for image slider autoplay navigation
+        var repeat = function (activeClass) {
+            let active = document.getElementsByClassName('active');
+            let i = 1;
+
+            var repeater = () => {
+                setTimeout(function () {
+                    [...active].forEach((activeSlide) => {
+                        activeSlide.classList.remove('active');
+                    });
+
+                    slides[i].classList.add('active');
+                    btns[i].classList.add('active');
+                    i++;
+
+                    if (slides.length == i) {
+                        i = 0;
+                    }
+                    if (i >= slides.length) {
+                        return;
+                    }
+                    repeater();
+                }, 10000);
+            }
+            repeater();
+        }
+        repeat();
+    </script>
+
     </body>
 
 </html>

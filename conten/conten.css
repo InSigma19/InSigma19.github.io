@@ -15,7 +15,6 @@ body a {
     flex-direction: column;
     box-sizing: border-box;
     overflow: hidden;
-    font-family: 'Inter', sans-serif;
 }
 
 .conten .judul {
@@ -201,6 +200,7 @@ body a {
     white-space: nowrap;
     overflow: hidden;
     animation: type 4s steps(55) forwards;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 /* source sans pro,sans-serif */
@@ -212,7 +212,7 @@ body a {
     }
 
     100% {
-        width: 45ch;
+        width: 56ch;
         opacity: 1;
     }
 }
@@ -230,12 +230,12 @@ body a {
 
 .slide-card {
     width: 100%;
-    margin-left: 20px;
 }
 
 .content-fisika {
     padding: 5px;
     display: grid;
+    margin: 0 20px;
     grid-auto-flow: column;
     scroll-behavior: auto;
     gap: 1.2rem;
@@ -448,12 +448,12 @@ body a {
     border-radius: 20px;
     width: 300px;
     height: 224px;
-    background: #e0e0e0;
     box-shadow: 4px 4px 7px #8f8f8f,
         -4px -4px 7px #fff;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    background-image: url(../gambar/gambar-conten/fisika.jpeg);
     background-position: center;
     background-size: cover;
     transition: 1s;
@@ -463,30 +463,15 @@ body a {
     border-radius: 20px;
     width: 300px;
     height: 224px;
-    background: #e0e0e0;
     box-shadow: 4px 4px 7px #8f8f8f,
         -4px -4px 7px #fff;
     display: flex;
     align-items: flex-end;
     overflow: hidden;
+    background-image: url(../gambar/gambar-conten/matematika.jpeg);
     background-position: center;
     background-size: cover;
     transition: 1s;
-}
-
-
-
-
-
-.definition .fisika {
-    background: url(../gambar/gambar-conten/6.png);
-    background-position: center;
-    background-size: cover;
-}
-
-
-.definition .matematika {
-    background: url(../gambar/.jpg);
 }
 
 .definition header {
@@ -498,6 +483,7 @@ body a {
     background: rgba(0, 0, 0, 0.4);
     color: #fff;
     font-size: 14px;
+    margin-bottom: -10px;
     transition: 1s;
 }
 
@@ -524,7 +510,9 @@ body a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #0800fb;
+    background: #e0e0e0;
+    box-shadow: 3px 3px 2px #8f8f8f,
+        -3px -3px 2px rgb(255, 255, 255);
     margin-top: 4px;
     position: absolute;
     bottom: 10px;
@@ -538,7 +526,7 @@ body a {
 
 .link a {
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 @keyframes anime {
@@ -701,6 +689,7 @@ body a {
 
     .definition header {
         font-size: 12px;
+        margin-bottom: -10px;
     }
 
     .definition h3 {
@@ -853,6 +842,10 @@ body a {
         height: 150px;
     }
 
+    .definition header {
+        margin-bottom: -10px;
+    }
+
     .definition:hover header {
         height: 80px;
     }
@@ -934,6 +927,11 @@ body a {
         font-size: 7px;
     }
 
+    .conten-learn h1 {
+        width: 78px;
+        margin-bottom: 0px;
+    }
+
     .card {
         font-weight: 600;
         height: 114px;
@@ -970,7 +968,7 @@ body a {
 
     .card:hover .info p {
         display: none;
-    }
+    } 
 
     .info header.link {
         width: 50px;
@@ -1013,7 +1011,8 @@ body a {
     }
 
     .pengenalan h3 {
-        font-size: 8px;
+        font-size: 7px;
+        padding: 2px;
     }
 
     .definition {
@@ -1033,6 +1032,10 @@ body a {
         border-radius: 10px;
     }
 
+    .definition header {
+        margin-bottom: -10px;
+    }
+
     .definition:hover header {
         height: 50px;
     }
@@ -1050,6 +1053,8 @@ body a {
         height: 10px;
         font-size: 7px;
         padding: 6px;
+        box-shadow: 2px 2px 2px #8f8f8f,
+            -2px -2px 2px rgb(255, 255, 255);
     }
 
     .footer {

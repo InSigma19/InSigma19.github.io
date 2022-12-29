@@ -129,7 +129,7 @@ header .img-text .header-text {
     padding-top: 5px;
 }
 
-.sidebar header .toggle {
+/* .sidebar header .toggle {
     position: absolute;
     top: 35%;
     right: -25px;
@@ -142,7 +142,7 @@ header .img-text .header-text {
     border-radius: 50%;
     color: var(--sidebar-color);
     font-size: 22px;
-}
+} */
 
 .sidebar .menu {
     margin-top: 3px;
@@ -152,6 +152,7 @@ header .img-text .header-text {
     background: var(--primary-color-light);
     border-radius: 6px;
     transition: var(--tran-05);
+    display: none;
 }
 
 body.dark .sidebar header .toggle {
@@ -185,7 +186,6 @@ body.dark .sidebar header .toggle {
 
 .sidebar li a:hover {
     background: var(--primary-color);
-    font-style: italic;
     margin-bottom: 5px;
     background: #e0e0e0;
     box-shadow: inset 8px 8px 16px #a1a1a1,
@@ -209,6 +209,7 @@ body.dark li a:hover .text {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 16px;
 }
 
 .menu-bar .mode {
@@ -420,6 +421,10 @@ body.dark .switch::before {
     .menu-bar .mode .toggle-switch {
         min-width: 42px;
         height: 92%;
+    }
+
+    .header-text .keterangan {
+        font-size: 10px;
     }
 
 }
