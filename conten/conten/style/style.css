@@ -14,6 +14,7 @@ body a {
     box-sizing: border-box;
     overflow: hidden;
     color: var(--text-color);
+    position: relative;
 }
 
 .conten .gambar {
@@ -86,6 +87,48 @@ body a {
     width: 100%;
     max-width: 900px;
     font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    
+}
+
+#darkMode {
+    color: rgb(187, 177, 177);
+    background:linear-gradient(145deg, #121313, #0f1010);
+}
+
+#darkMode .mode-toogle{
+    color: #fff;
+}
+
+.mode-toogle{
+    width: max-content;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 5px;
+    margin-top: 5px;
+    color: rgb(29, 28, 28);
+    position: absolute;
+    right: 20px;
+    top: 20px; 
+}
+
+span.icon{
+    
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+span.icon:hover {
+    background: #ebe5e5;
+box-shadow: inset 10px 10px 20px #a09c9c,
+            inset -10px -10px 20px #ffffff;
+            color: #000;
 }
 
 .text-conten p {

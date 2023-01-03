@@ -179,6 +179,11 @@ body a {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: .5s;
+}
+
+.card:hover{
+    box-shadow: none;
 }
 
 .card img {
@@ -270,6 +275,7 @@ body a {
     background: #e0e0e0;
     box-shadow: 2px 2px 3px #8f8f8f,
         -2px -2px 3px #fff;
+        transition: .5s;
 }
 
 .card-populer:hover {
@@ -519,9 +525,9 @@ body a {
     }
 
     .card .link {
-        height: 100%;
-        width: 14%;
-        border-radius: 0;
+         height: 64%;
+        width: 10%;
+        border-radius: 50%;
     }
 
     .atom {
@@ -602,8 +608,7 @@ body a {
     }
 
     .card .link {
-        height: 64%;
-        width: 10%;
+       display: none;
     }
 
     .center {
