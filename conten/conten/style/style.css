@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Sevillana&display=swap');
+
 body a {
     text-decoration: none;
     color: inherit;
@@ -111,7 +114,7 @@ body a {
     color: rgb(29, 28, 28);
     position: absolute;
     right: 20px;
-    top: 20px; 
+    top: 0; 
 }
 
 span.icon{
@@ -131,13 +134,22 @@ box-shadow: inset 10px 10px 20px #a09c9c,
             color: #000;
 }
 
+.paragraf-pertama::first-letter {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #18191a;
+    font-family: 'Sevillana', cursive;
+}
+
 .text-conten p {
     text-align: justify;
     line-height: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
 }
+
+
 
 .text-conten .judul {
     margin-bottom: 20px;
